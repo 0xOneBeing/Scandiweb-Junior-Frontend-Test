@@ -1,4 +1,4 @@
-function Navigation() {
+function Navbar() {
     return (
         <nav className="navbar navbar-expand-md text-center">
             <div className="navbar-nav links col-md-4">
@@ -16,4 +16,4 @@ function Navigation() {
     )
 }
 
-export default Navigation;
+export default Navbar;

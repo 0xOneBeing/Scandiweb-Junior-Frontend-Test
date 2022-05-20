@@ -1,5 +1,3 @@
-// import logo from "";
-
 function Navigation() {
     return (
         <nav className="navbar navbar-expand-md text-center">

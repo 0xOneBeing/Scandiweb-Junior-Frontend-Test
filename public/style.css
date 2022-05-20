@@ -3,25 +3,18 @@
 }
 
 .navbar {
-    /* background-color: #21222A; */
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: #eaeaea; */
     padding: 1.5rem 2rem;
-    background-color: #eaeaea;
-    transition: top 500ms ease-in-out;
 }
 
-.links > a {
+.links > li > a {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-    padding: 0 20px;
 }
 
-.links > a :hover {
-    border-bottom: 2px solid green !important;
+.links > li > a:hover {
+    color: green;
+    border-bottom: 2px solid green;
 }

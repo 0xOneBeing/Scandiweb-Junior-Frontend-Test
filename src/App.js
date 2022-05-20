@@ -1,7 +1,8 @@
 import logo from './logo.svg';
-import Navbar from "./components/Navbar"
+import Navigation from "./components/Navigation"
 import Main from './components/Main'
 import bootstrap from 'bootstrap' 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 // import './App.css';
 
 // const bootstrap = require('bootstrap')
@@ -9,8 +10,8 @@ import bootstrap from 'bootstrap'
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <Navbar />
+      <div className="container-fluid">
+        <Navigation />
         <Main />
       </div>
     </div>

@@ -17,3 +17,13 @@
     color: #52D6A4;
     border-bottom: 2px solid #52D6A4;
 }
+
+.currency, .currency:active {
+    border: 0;
+    background-color: transparent;
+    /* appearance: none; */
+}
+
+option {
+    background-color: #ffffff;
+}

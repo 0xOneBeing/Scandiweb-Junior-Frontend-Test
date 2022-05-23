@@ -18,28 +18,34 @@ function Navbar() {
                     </a>
                 </div>
                 <div className="actions col-md-4">
-                    <div className='currencySwitcher col-md-6'>
+                    <div className='col-md-6'>
                         <div className="row">
                             <div className="col">
-                                <select className="currency" name="currency" id='currency'>
+                                <select className="currencySwitcher currency" name="currency" id='currency'>
                                     <option value="usd">$ USD</option>
                                     <option value="eur">€ EUR</option>
                                     <option value="jpy">¥ JPY</option>
                                 </select>
                             </div>
                             <div className="col">
-                            <span>
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Link</a></li>
-                                    <li><a className="dropdown-item" href="#">Another link</a></li>
-                                    <li><a className="dropdown-item" href="#">A third link</a></li>
-                                </ul>
-                            </span>
+                                <div className="dropdown">
+                                    <button className="shopping-cart-button" onclick="myFunction()" ><i class="fa-solid fa-cart-shopping"></i></button>
+                                    <div className="cart-menu" id="dropdown">
+                                        <a href="#">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                    </div>
+                                </div>
+                                {/* <span>
+                                    <a className="shopping-cart-menu nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="#">Link</a></li>
+                                        <li><a className="dropdown-item" href="#">Another link</a></li>
+                                        <li><a className="dropdown-item" href="#">A third link</a></li>
+                                    </ul>
+                                </span> */}
                             </div>
                         </div>
-                    </div>
-                    <div className="nav-item dropdown">
                     </div>
                 </div>
             </div>

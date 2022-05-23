@@ -27,3 +27,9 @@
 option {
     background-color: #ffffff;
 }
+
+
+.fa-cart-shopping {
+    color: #000000;
+    /* border: 1px solid #000000; */
+}

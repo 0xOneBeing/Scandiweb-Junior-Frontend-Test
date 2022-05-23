@@ -29,7 +29,7 @@ function Navbar() {
                             </div>
                             <div className="col">
                             <span>
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">shopping_cart</a>
+                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-cart-shopping"></i></a>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="#">Link</a></li>
                                     <li><a className="dropdown-item" href="#">Another link</a></li>

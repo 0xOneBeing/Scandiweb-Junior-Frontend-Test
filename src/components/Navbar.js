@@ -18,12 +18,29 @@ function Navbar() {
                     </a>
                 </div>
                 <div className="actions col-md-4">
-                    <div className='currencySwitcher'>
-                        <select className="currency" name="currency" id='currency'>
-                            <option value="usd">$ USD</option>
-                            <option value="eur">€ EUR</option>
-                            <option value="jpy">¥ JPY</option>
-                        </select>
+                    <div className='currencySwitcher col-md-6'>
+                        <div className="row">
+                            <div className="col">
+                                <select className="currency" name="currency" id='currency'>
+                                    <option value="usd">$ USD</option>
+                                    <option value="eur">€ EUR</option>
+                                    <option value="jpy">¥ JPY</option>
+                                </select>
+                            </div>
+                            <div className="col">
+                            <span>
+                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">shopping_cart</a>
+                                <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="#">Link</a></li>
+                                    <li><a className="dropdown-item" href="#">Another link</a></li>
+                                    <li><a className="dropdown-item" href="#">A third link</a></li>
+                                </ul>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="nav-item dropdown">
+                        {/* <span className="glyphicon glyphicon-shopping-cart"></span> */}
                     </div>
                 </div>
             </div>

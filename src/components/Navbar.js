@@ -40,7 +40,6 @@ function Navbar() {
                         </div>
                     </div>
                     <div className="nav-item dropdown">
-                        {/* <span className="glyphicon glyphicon-shopping-cart"></span> */}
                     </div>
                 </div>
             </div>

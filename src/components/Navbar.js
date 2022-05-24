@@ -1,5 +1,5 @@
 import logo from '../images/logo.png'
-import shoppingCartMenu from '../scripts/scripts'
+// import ShoppingCartMenu from '../scripts/Scripts'
 
 function Navbar() {
     return (
@@ -23,19 +23,20 @@ function Navbar() {
                         <div className="row">
                             <div className="col">
                                 <select className="currencySwitcher currency" name="currency" id='currency'>
-                                    <option value="usd">$ USD</option>
-                                    <option value="eur">€ EUR</option>
-                                    <option value="jpy">¥ JPY</option>
+                                    <option name="usd" value="usd">$ USD</option>
+                                    <option name="eur" value="eur">€ EUR</option>
+                                    <option name="jpy" value="jpy">¥ JPY</option>
                                 </select>
                             </div>
                             <div className="col">
                                 <div className="dropdown">
-                                    <button className="shopping-cart-button" onClick={shoppingCartMenu}><i className="fa-solid fa-cart-shopping"></i></button>
-                                    <div className="cart-menu" id="dropdown">
-                                        <a href="#">1</a>
-                                        <a href="#">2</a>
-                                        <a href="#">3</a>
-                                    </div>
+                                    {/* <button className="shopping-cart-button dropdown-toggle" data-toggle="dropdown" onClick={this.ShoppingCartMenu}><i className="fa-solid fa-cart-shopping"></i></button> */}
+                                    <button type="button" className="shopping-cart-button btn dropdown-toggle" data-toggle="dropdown"><i className="fa-solid fa-cart-shopping"></i></button>
+                                    <ul className="cart-menu dropdown-menu" id="dropdown">
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

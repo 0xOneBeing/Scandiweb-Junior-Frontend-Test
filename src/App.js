@@ -5,6 +5,24 @@ import Cart from './components/Cart'
 import PDP from './components/PDP'
 import bootstrap from 'bootstrap' 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  HttpLink,
+  from
+} from '@apollo/client'
+import {onError} from '@apollo/client/link/error'
+
+const link = from({
+  errorLink,
+  new HttpLink(uri: {/* Paste link here */})
+})
+
+const client = ApolloClient({
+  cache: new InMemoryCache()
+  link: link
+})
 
 function App() {
   return (

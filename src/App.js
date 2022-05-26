@@ -19,10 +19,10 @@ import {onError} from '@apollo/client/link/error'
 //   new HttpLink(uri: {/* Paste link here */})
 // })
 
-const client = ApolloClient({
-  cache: new InMemoryCache()
-  link: link
-})
+// const client = ApolloClient({
+//   cache: new InMemoryCache()
+//   link: link
+// })
 
 function App() {
   return (

@@ -14,10 +14,10 @@ import {
 } from '@apollo/client'
 import {onError} from '@apollo/client/link/error'
 
-const link = from({
-  errorLink,
-  new HttpLink(uri: {/* Paste link here */})
-})
+// const link = from({
+//   errorLink,
+//   new HttpLink(uri: {/* Paste link here */})
+// })
 
 const client = ApolloClient({
   cache: new InMemoryCache()
